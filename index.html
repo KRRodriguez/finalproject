@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet"  href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css">
+<link href="styles/main.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"> </script>
+<title> 13 Bizarre American Restaurants </title>
+</head>
+
+<body>
+<h1> A Travelers Guide: 13 Bizzarre American Restaurants</h1>
+
+
+
+
+
+
+
+
+
+  <div id="mapid"></div>
+<script>
+  var mymap = L.map('mapid').setView([40.38, -98.13], 5);
+
+
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'krrodriguez26.28896cm9',
+    accessToken: 'pk.eyJ1Ijoia3Jyb2RyaWd1ZXoyNiIsImEiOiJjaXZqcnV6eWMwMWluMnR0bWoyMDBraWhoIn0.TsJbzRUGyd7gMIwTlIrQ-g'
+}).addTo(mymap);
+
+var marker1 = L.marker([43.059, -87.962]).addTo(mymap);
+marker1.bindPopup("<b>Milwaukee, WI</b><br>The Safe House").openPopup();
+
+
+var marker1 = L.marker([41.827, -87.697]).addTo(mymap);
+marker1.bindPopup("<b>Chicago</b><br>Tommy Gun’s Garage").openPopup();
+
+
+var marker1 = L.marker([40.744, -74.041]).addTo(mymap);
+marker1.bindPopup("<b>New York City</b><br> Ninja").openPopup();
+
+var marker1 = L.marker([34.032, -118.321]).addTo(mymap);
+marker1.bindPopup("<b>Los Angeles,CA</b><br> Opaque ").openPopup();
+
+var marker1 = L.marker([30.57, -96.294]).addTo(mymap);
+marker1.bindPopup("<b>College Station, TX</b><br>Harvey Washbangers ").openPopup();
+
+var marker1 = L.marker([47.657, -121.899]).addTo(mymap);
+marker1.bindPopup("<b>Carnation, WA</b><br> Bors Hede Inne").openPopup();
+
+var marker1 = L.marker([37.719, -122.435]).addTo(mymap);
+marker1.bindPopup("<b>San Francisco, CA</b><br> Tonga Room").openPopup();
+
+var marker1 = L.marker([36.319, -115.406]).addTo(mymap);
+marker1.bindPopup("<b>las Vegas </b><br>Jean-Philippe Pâtisserie ").openPopup();
+
+var marker1 = L.marker([41.486, -71.326]).addTo(mymap);
+marker1.bindPopup("<b>Newport, RI</b><br>The White Horse Tavern ").openPopup();
+
+var marker1 = L.marker([33.786, -84.445]).addTo(mymap);
+marker1.bindPopup("<b>Atlanta, GA</b><br>The Varsity").openPopup();
+
+var marker1 = L.marker([38.899, -77.015]).addTo(mymap);
+marker1.bindPopup("<b> Washington DC</b><br>Serendity 3 ").openPopup();
+
+var marker1 = L.marker([28.494, -81.297]).addTo(mymap);
+marker1.bindPopup("<b> Orlando, FL </b><br>Sci-Fi Dine-In").openPopup();
+
+var marker1 = L.marker([34.032, -118.321,]).addTo(mymap);
+marker1.bindPopup("<b> Los Angeles, CA FL </b><br>Magic Restroom Cafe ").openPopup();
+
+
+</script>
+
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
